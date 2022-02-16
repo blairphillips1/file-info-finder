@@ -16,7 +16,7 @@ const formatBytes = (bytes, decimals = 2) => {
   return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
 }
 
-export const getImageDetails = async (url) => {
+export const getFileDetails = async (url) => {
   try {
     const info = await axios.get(url);
     const { 
